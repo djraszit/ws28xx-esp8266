@@ -1,0 +1,8 @@
+.cproject
+*.swp
+user/.output
+.output
+.settings
+.project
+BIN
+
