@@ -12,9 +12,23 @@ cd ~/esp8266
 ```bash
 git clone https://github.com/espressif/ESP8266_RTOS_SDK.git
 
+cd ESP8266_RTOS_SDK
+
+#Zmieniamy brancha na v2.1
+git checkout release/v2.1
+
+cd ../
+
 #Pobieramy toolchaina w wersji v4.8.5 na odpowiednią architekture
 
 wget https://dl.espressif.com/dl/xtensa-lx106-elf-linux64-1.22.0-88-gde0bdc1-4.8.5.tar.gz
+
+gzip --decompress xtensa-lx106-elf-linux64-1.22.0-88-gde0bdc1-4.8.5.tar.gz
+
+tar -xf xtensa-lx106-elf-linux64-1.22.0-88-gde0bdc1-4.8.5.tar
+
+#Powinniśmy mieć folder xtensa-lx106-elf
+
 ```
 * Pobieramy projekt
 ```bash
