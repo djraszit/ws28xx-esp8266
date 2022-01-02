@@ -14,8 +14,8 @@ z dokumentacją techniczną,
 a najlepiej użyj gen-misc.sh-original lub gen-misc.bat w windowsie
 !
 
-PATH=$PATH:/home/raszit/esp8266/xtensa-lx106-elf.old/bin:/home/raszit/esp8266
-export SDK_PATH=/home/raszit/esp8266/ESP8266_RTOS_SDK.new
+PATH=$PATH:/home/raszit/esp8266/xtensa-lx106-elf/bin:/home/raszit/esp8266
+export SDK_PATH=/home/raszit/esp8266/ESP8266_RTOS_SDK
 export BIN_PATH=./BIN
 
 boot=none
@@ -58,6 +58,6 @@ make clean
 
 make BOOT=$boot APP=$app SPI_SPEED=$spi_speed SPI_MODE=$spi_mode SPI_SIZE_MAP=$spi_size_map
 
-OBJDUMP=/home/raszit/esp8266/xtensa-lx106-elf.old/xtensa-lx106-elf/bin/objdump mem_usage.sh .output/eagle/debug/image/eagle.app.v6.out
+#OBJDUMP=/home/raszit/esp8266/xtensa-lx106-elf.old/xtensa-lx106-elf/bin/objdump mem_usage.sh .output/eagle/debug/image/eagle.app.v6.out
 
 
