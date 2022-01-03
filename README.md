@@ -2,6 +2,8 @@
 Jest to program do sterowania ledami ws28xx
 z modułu esp8266 (ja używam esp12-e)
 
+Wykorzystuje I2S (pin U0RXD) do wysyłania danych do ledów
+
 ## Przygotowanie środowiska w systemach Debian i podobnych
 * Tworzymy sobie folder i przechodzimy do tego folderu
 ```bash
